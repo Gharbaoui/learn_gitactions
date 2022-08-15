@@ -3,5 +3,5 @@
 void	CHECK_EQUALS(bool cond, bool pcond, unsigned line, const char *file)
 {
 	if (!cond)
-		print("not equal", line, file);
+		print_exit("not equal", line, file);
 }
