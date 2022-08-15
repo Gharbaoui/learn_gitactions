@@ -1,6 +1,9 @@
 CC=clang++
 CFLAGS=""
 
+all: libOpratorTest.so
+
+
 libOpratorTest.so: ./src/*.cpp
 	$(CC) $(CFLAGS) -shared -fPIC $^ -o ./lib/$@
 
@@ -8,4 +11,4 @@ libOpratorTest.so: ./src/*.cpp
 clean:
 	rm -f ./lib/libOpratorTest.so
 
-re: clean libOpratorTest
+re: clean all
