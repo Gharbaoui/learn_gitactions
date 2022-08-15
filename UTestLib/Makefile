@@ -1,8 +1,7 @@
 CC=clang++
-CFLAGS=""
+CFLAGS=
 
 all: libOpratorTest.so
-
 
 libOpratorTest.so: ./src/*.cpp
 	$(CC) $(CFLAGS) -shared -fPIC $^ -o ./lib/$@

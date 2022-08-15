@@ -1,1 +1,1 @@
-make --directory=UTestLib/ 
+make --directory=UTestLib/ all
